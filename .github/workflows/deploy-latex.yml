@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir ./public
           cp *.tex public/
+          cp -r assets/ public/
           cd public/
           pdflatex main.tex
           pdflatex main.tex
