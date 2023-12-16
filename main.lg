@@ -126,6 +126,7 @@ Css: figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 Css: p + figcaption, img + figcaption{margin-top: 1em;}
 Css: .abstract{margin:1em;}
 Css: .rotatebox{display: inline-block;}
+File: assets/placeholder.png
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmr","17","17","100")
