@@ -29,39 +29,9 @@ jobs:
           sudo apt update
           sudo apt install -y texlive-base
 
-      - name: Update TeX Live Manager
-        run: |
-          sudo tlmgr update --self
-
-      - name: Initialize TeX Live User Tree
-        run: |
-          sudo tlmgr init-usertree
-
-      - name: Set TEXMFHOME
-        run: |
-          echo "export TEXMFHOME=\$HOME/texmf" >> $GITHUB_ENV
-
       - name: Install TeX Live Extra Packages
         run: |
-          sudo tlmgr install \
-            babel \
-            latex-base \
-            placeins \
-            helvet \
-            graphics \
-            geometry \
-            caption \
-            setspace \
-            indentfirst \
-            amsmath \
-            amsfonts \
-            amssymb \
-            siunitx \
-            verbatim \
-            hyperref \
-            natbib \
-            subfig \
-            float
+          sudo apt install -y texlive-latex-extra
 
       - name: Build Latex PDF and HTML
         run: |
