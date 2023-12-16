@@ -29,6 +29,10 @@ jobs:
           sudo apt update
           sudo apt install texlive-base
 
+      - name: Update TeX Live Manager
+        run: |
+          sudo tlmgr update --self
+
       - name: Install TeX Live Extra Packages
         run: |
           sudo tlmgr init-usertree
