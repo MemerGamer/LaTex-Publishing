@@ -29,6 +29,7 @@ jobs:
           cp *.tex public/
           cd public/
           pdflatex main.tex
+          pdflatex main.tex
           make4ht main.tex
           mv main.html index.html
 
