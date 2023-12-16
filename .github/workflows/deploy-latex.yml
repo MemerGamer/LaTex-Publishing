@@ -31,25 +31,25 @@ jobs:
 
       - name: Install TeX Live Extra Packages
         run: |
-          sudo apt update
-          sudo apt install -y \
-            texlive-babel \
-            texlive-latex-base \
-            texlive-placeins \
-            texlive-helvet \
-            texlive-latex-extra \
-            texlive-fonts-recommended \
-            texlive-caption \
-            texlive-setspace \
-            texlive-indentfirst \
-            texlive-math-extra \
-            texlive-fonts-extra \
-            texlive-science \
-            texlive-verbatim \
-            texlive-hyperref \
-            texlive-bibtex-extra \
-            texlive-subfig \
-            texlive-float
+          sudo tlmgr install \
+          babel \
+          latex-base \
+          placeins \
+          helvet \
+          graphics \
+          geometry \
+          caption \
+          setspace \
+          indentfirst \
+          amsmath \
+          amsfonts \
+          amssymb \
+          siunitx \
+          verbatim \
+          hyperref \
+          natbib \
+          subfig \
+          float
 
       - name: Build Latex PDF and HTML
         run: |
