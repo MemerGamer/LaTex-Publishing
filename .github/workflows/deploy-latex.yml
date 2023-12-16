@@ -27,11 +27,7 @@ jobs:
       - name: Install TeX Live
         run: |
           sudo apt update
-          sudo apt install -y texlive-base
-
-      - name: Install TeX Live Extra Packages
-        run: |
-          sudo apt install -y texlive-latex-extra
+          sudo apt install texlive-full
 
       - name: Build Latex PDF and HTML
         run: |
