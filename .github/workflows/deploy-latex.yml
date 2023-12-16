@@ -31,7 +31,8 @@ jobs:
 
       - name: Install TeX Live Extra Packages
         run: |
-          tlmgr install \
+          sudo tlmgr init-usertree
+          sudo tlmgr install \
           babel \
           latex-base \
           placeins \
